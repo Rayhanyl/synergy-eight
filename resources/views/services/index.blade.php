@@ -2,7 +2,7 @@
 @section('content')
     <!-- service -->
     <section class="section-lg service-bg-image position-relative"
-        style="background-image: url(assets/images/backgrounds/service-page.png);">
+        style="background-image: url({{ asset ('assets/images/backgrounds/service-page.png') }});">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">

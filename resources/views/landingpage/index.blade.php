@@ -2,7 +2,7 @@
 @section('content')
     <!-- hero area -->
     <section class="hero-section hero" data-background=""
-        style="background-image: url(assets/images/hero-area/banner-bg.png);">
+        style="background-image: url({{ asset ('assets/images/hero-area/banner-bg.png') }});">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center zindex-1" data-aos="fade-up" data-aos-duration="1000">
@@ -13,7 +13,7 @@
                     <a href="{{ route('aboutus.view') }}" class="btn btn-secondary btn-lg">about us</a>
                     <!-- banner image -->
                     <img class="img-fluid w-75 banner-image rounded shadow-img"
-                        src="{{ asset('assets/images/hero-area/picture-1.jpg') }}" alt="banner-img">
+                        src="{{ asset ('assets/images/hero-area/picture-1.jpg') }}" alt="banner-img">
                 </div>
             </div>
         </div>

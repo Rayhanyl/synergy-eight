@@ -42,7 +42,7 @@
     <!-- /about us -->
 
     <!-- product -->
-    <section class="section product" style="background-image: url(assets/images/backgrounds/about-bg.png);">
+    <section class="section product" style="background-image: url({{ asset ('assets/images/backgrounds/about-bg.png') }});">
         <!-- our vision -->
         <section class="section">
             <div class="container">
