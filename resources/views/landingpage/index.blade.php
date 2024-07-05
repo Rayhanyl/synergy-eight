@@ -1,198 +1,272 @@
 @extends('app')
 @section('content')
-    <!-- hero area -->
-    <section class="hero-section hero" data-background=""
-        style="background-image: url({{ asset ('assets/images/hero-area/banner-bg.png') }});">
+    <div class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center zindex-1" data-aos="fade-up" data-aos-duration="1000">
-                    <h1 class="mb-3">Empowering Businesses Through<br>
-                        Collaborative Innovation</h1>
-                    <p class="mb-4">Empowering businesses through collaborative innovation,<br>
-                        combining expertise with your vision for tailored success.</p>
-                    <a href="{{ route('aboutus.view') }}" class="btn btn-secondary btn-lg">about us</a>
-                    <!-- banner image -->
-                    <img class="img-fluid w-75 banner-image rounded shadow-img"
-                        src="{{ asset ('assets/images/hero-area/picture-1.jpg') }}" alt="banner-img">
-                </div>
-            </div>
-        </div>
-        <!-- background shapes -->
-        <div id="scene">
-            <img class="img-fluid hero-bg-1 up-down-animation"
-                src="{{ asset('assets/images/background-shape/feature-bg-2.png') }}" alt="">
-            <img class="img-fluid hero-bg-2 left-right-animation"
-                src="{{ asset('assets/images/background-shape/seo-ball-1.png') }}" alt="">
-            <img class="img-fluid hero-bg-3 left-right-animation"
-                src="{{ asset('assets/images/background-shape/seo-half-cycle.png') }}" alt="">
-            <img class="img-fluid hero-bg-4 up-down-animation"
-                src="{{ asset('assets/images/background-shape/green-dot.png') }}" alt="">
-            <img class="img-fluid hero-bg-5 left-right-animation"
-                src="{{ asset('assets/images/background-shape/blue-half-cycle.png') }}" alt="">
-            <img class="img-fluid hero-bg-6 up-down-animation"
-                src="{{ asset('assets/images/background-shape/seo-ball-1.png') }}" alt="">
-            <img class="img-fluid hero-bg-7 left-right-animation"
-                src="{{ asset('assets/images/background-shape/yellow-triangle.png') }}" alt="">
-            <img class="img-fluid hero-bg-8 up-down-animation"
-                src="{{ asset('assets/images/background-shape/service-half-cycle.png') }}" alt="">
-            <img class="img-fluid hero-bg-9 up-down-animation"
-                src="{{ asset('assets/images/background-shape/team-bg-triangle.png') }}" alt="">
-        </div>
-    </section>
-    <!-- /hero-area -->
-
-    <!-- feature -->
-    <section class="section feature mb-0" id="feature">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-title">Awesome Features</h2>
-                    <p class="mb-100">At Synergy Eight, we pride ourselves on offering an array of awesome features that set
-                        us apart from the competition. Whether you're leveraging our Professional Programmers, Training
-                        services, or APICENTRUM, you'll experience unparalleled benefits designed to drive your success.</p>
-                </div>
-                <!-- feature item -->
-                <div class="col-md-6 mb-80">
-                    <div class="d-flex feature-item">
-                        <div>
-                            <i class="ti-ruler-pencil feature-icon mr-4"></i>
-                        </div>
-                        <div>
-                            <h4>APICENTRUM</h4>
-                            <p>Comprehensive API Management: Monitor, secure, optimize API lifecycle.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- feature item -->
-                <div class="col-md-6 mb-80">
-                    <div class="d-flex feature-item">
-                        <div>
-                            <i class="ti-layout-cta-left feature-icon mr-4"></i>
-                        </div>
-                        <div>
-                            <h4>APICENTRUM</h4>
-                            <p>Custom API Development: Tailored APIs for seamless integration and functionality.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- feature item -->
-                <div class="col-md-6 mb-80">
-                    <div class="d-flex feature-item">
-                        <div>
-                            <i class="ti-split-v-alt feature-icon mr-4"></i>
-                        </div>
-                        <div>
-                            <h4>Professional Programmers</h4>
-                            <p>Diverse Expertise: Proficient in Python, Java, JS, C++, .NET, Ruby on Rails.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- feature item -->
-                <div class="col-md-6 mb-80">
-                    <div class="d-flex feature-item">
-                        <div>
-                            <i class="ti-layers-alt feature-icon mr-4"></i>
-                        </div>
-                        <div>
-                            <h4>Training</h4>
-                            <p>Comprehensive Courses: Vast array covering languages, methodologies, cybersecurity, AI, ML.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img class="feature-bg-1 up-down-animation" src="{{ asset('assets/images/background-shape/feature-bg-1.png') }}"
-            alt="bg-shape">
-        <img class="feature-bg-2 left-right-animation" src="{{ asset('assets/images/background-shape/feature-bg-2.png') }}"
-            alt="bg-shape">
-    </section>
-    <!-- /feature -->
-
-    <!-- marketing -->
-    <section class="section-lg seo">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex align-items-center">
-                    <div class="seo-image">
-                        <img class="img-fluid rounded shadow-img"
-                            src="{{ asset('assets/images/marketing/picture-2.jpg') }}" alt="form-img">
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <h3 class="section-title">Elevating Business Through Collaborative Innovation</h3>
-
-                    <p>Synergy Eight Bandung is a premier outsourcing company based in the heart of Indonesia's vibrant
-                        city, Bandung.<br>
-                        With a dedicated team of professionals and a commitment to excellence, we offer a range of services
-                        tailored to meet the diverse needs of our clients.
+                <div class="col-12 col-md-6 col-lg-7">
+                    <p class="text-title-hero">Enhance Your Business <br> with Sinergi Delapan</p>
+                    <p class="text-desc-hero">Sinergi Delapan Mandiri is a leading provider of
+                        professional IT services,
+                        training, and API
+                        management solutions. Our team of skilled IT specialists delivers reliable solutions and
+                        seamless
+                        delivery to meet the unique needs of our clients. Through our IT training programs, we empower
+                        programmers to upgrade their skills and advance their careers in the ever-evolving tech industry
                     </p>
+                    <div class="py-2">
+                        <a class="btn btn-danger rounded-5 px-4 py-2 text-btn-hero">Read More <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="text-end">
+                        <img class="img-hero" src="{{ asset('assets/img/hero.png') }}" alt="hero">
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- background image -->
-        <img class="img-fluid seo-bg" src="{{ asset('assets/images/backgrounds/seo-bg.png') }}" alt="seo-bg">
-        <!-- background-shape -->
-        <img class="seo-bg-shape-1 left-right-animation" src="{{ asset('assets/images/background-shape/seo-ball-1.png') }}"
-            alt="bg-shape">
-        <img class="seo-bg-shape-2 up-down-animation"
-            src="{{ asset('assets/images/background-shape/seo-half-cycle.png') }}" alt="bg-shape">
-        <img class="seo-bg-shape-3 left-right-animation" src="{{ asset('assets/images/background-shape/seo-ball-2.png') }}"
-            alt="bg-shape">
-    </section>
-    <!-- /marketing -->
-
-    <!-- client logo slider -->
-    <section class="section">
+    </div>
+    </div>
+    <div class="services">
         <div class="container">
-            <div class="client-logo-slider align-self-center">
-                <a href="#" class="text-center d-block outline-0 p-5"><img class="d-unset img-fluid"
-                        src="{{ asset('assets/images/clients-logo/client-logo-1.png') }}" alt="client-logo"></a>
-                <a href="#" class="text-center d-block outline-0 p-5"><img class="d-unset img-fluid"
-                        src="{{ asset('assets/images/clients-logo/client-logo-2.png') }}" alt="client-logo"></a>
-                <a href="#" class="text-center d-block outline-0 p-5"><img class="d-unset img-fluid"
-                        src="{{ asset('assets/images/clients-logo/client-logo-3.png') }}" alt="client-logo"></a>
-                <a href="#" class="text-center d-block outline-0 p-5"><img class="d-unset img-fluid"
-                        src="{{ asset('assets/images/clients-logo/client-logo-4.png') }}" alt="client-logo"></a>
-                <a href="#" class="text-center d-block outline-0 p-5"><img class="d-unset img-fluid"
-                        src="{{ asset('assets/images/clients-logo/client-logo-5.png') }}" alt="client-logo"></a>
-                <a href="#" class="text-center d-block outline-0 p-5"><img class="d-unset img-fluid"
-                        src="{{ asset('assets/images/clients-logo/client-logo-1.png') }}" alt="client-logo"></a>
-                <a href="#" class="text-center d-block outline-0 p-5"><img class="d-unset img-fluid"
-                        src="{{ asset('assets/images/clients-logo/client-logo-2.png') }}" alt="client-logo"></a>
-                <a href="#" class="text-center d-block outline-0 p-5"><img class="d-unset img-fluid"
-                        src="{{ asset('assets/images/clients-logo/client-logo-3.png') }}" alt="client-logo"></a>
-                <a href="#" class="text-center d-block outline-0 p-5"><img class="d-unset img-fluid"
-                        src="{{ asset('assets/images/clients-logo/client-logo-4.png') }}" alt="client-logo"></a>
-                <a href="#" class="text-center d-block outline-0 p-5"><img class="d-unset img-fluid"
-                        src="{{ asset('assets/images/clients-logo/client-logo-5.png') }}" alt="client-logo"></a>
+            <div class="row g-5">
+                <div class="col-12 text-center">
+                    <p class="text-title-head-service">Our Top Services for You</p>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 hover-service p-4 text-center">
+                            <img class="img-service-training" src="{{ asset('assets/img/icon-training.png') }}"
+                                alt="training">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="">
+                                    <p class="text-title-service" style="color:#E89F00;">Professional Services</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-desc-service">Provide IT Specialist for reliable solutions and seamlessly
+                                        delivery</p>
+                                </div>
+                            </div>
+                            <a class="" href="{{ route('professional-service') }}">
+                                <img class="img-icon-arrow" src="{{ asset('assets/img/icon-arrow.png') }}" alt="arrow">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 hover-service p-4 text-center">
+                            <img class="img-service-service" src="{{ asset('assets/img/icon-service.png') }}"
+                                alt="service">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="">
+                                    <p class="text-title-service" style="color:#FB563F;">IT Training</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-desc-service">Provide IT Training for Programmers to upgrade their skills
+                                        and careers</p>
+                                </div>
+                            </div>
+                            <a class="" href="{{ route('training-service') }}">
+                                <img class="img-icon-arrow" src="{{ asset('assets/img/icon-arrow.png') }}" alt="arrow">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 hover-service p-4 text-center">
+                            <img class="img-service-api" src="{{ asset('assets/img/icon-api.png') }}" alt="api">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="">
+                                    <p class="text-title-service" style="color:#3A4864;">APIcentrum</p>
+                                </div>
+                                <div class="">
+                                    <p class="text-desc-service">Provide API Manager for business, government, and
+                                        individual</p>
+                                </div>
+                            </div>
+                            <a class="" href="https://apicentrum.io/">
+                                <img class="img-icon-arrow" src="{{ asset('assets/img/icon-arrow.png') }}" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- /client logo slider -->
-
-    <!-- newsletter -->
-    <section class="newsletter">
+    </div>
+    <div class="next-level">
+        <div class="bg-blur-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-md-6 col-lg-7 d-flex align-items-end">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="custom-hr"></div>
+                            </div>
+                            <div class="col-12">
+                                <p class="text-title-nextlevel">Taking Your Business to The <span
+                                        style="font-weight: 600">Next Level</span></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="text-desc-nextlevel">We urging businesses to improve their performance by
+                                    adopting
+                                    the latest, customized, and
+                                    reliable technological solutions. Business will conduct some benefits such as
+                                    reduced
+                                    costs, scalability, new technologies, expertise and experience, improved security,
+                                    and
+                                    strategic planning</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-md-6 col-lg-5">
+                        <div class="text-end">
+                            <img class="img-nextlevel" src="{{ asset('assets/img/logo-next-level.png') }}" alt="next level">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trusted-partner">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Subscribe to our newsletter</h2>
-                    <p class="mb-5">Receive updates, news and deals</p>
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="text-right">
+                        <img class="img-trusted" src="{{ asset('assets/img/logo-trusted.png') }}" alt="trusted">
+                    </div>
                 </div>
-                <div class="col-lg-8 col-sm-10 col-12 mx-auto">
-                    <form action="#">
-                        <div class="input-wrapper position-relative">
-                            <input type="email" class="newsletter-form" id="newsletter"
-                                placeholder="Enter your email">
-                            <button type="submit" value="send" class="btn newsletter-btn">subscribe</button>
+                <div class="col-12 col-md-6 col-lg-7 d-flex align-items-end">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="custom-hr"></div>
                         </div>
-                    </form>
+                        <div class="col-12">
+                            <p class="text-title-nextlevel"><span style="font-weight: 600;">Trusted Partner</span> for All
+                                Your IT Needs</p>
+                        </div>
+                        <div class="col-12">
+                            <p class="text-desc-nextlevel">With a diverse portfolio of satisfied customers, we specialize
+                                in
+                                providing innovative
+                                solutions to help businesses thrive in today's digital world. Our team of experts is
+                                dedicated to delivering top-notch services and support to ensure your success.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="row g-3">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card rounded-5">
+                                        <div class="card-body text-center">
+                                            <p class="text-number-trusted">20+</p>
+                                            <p>IT Outsources</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card rounded-5">
+                                        <div class="card-body text-center">
+                                            <p class="text-number-trusted">5+</p>
+                                            <p>Applications</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card rounded-5">
+                                        <div class="card-body text-center">
+                                            <p class="text-number-trusted">10+</p>
+                                            <p>Industry Fields</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- background shapes -->
-        <img class="newsletter-bg-shape left-right-animation"
-            src="{{ asset('assets/images/background-shape/seo-ball-2.png') }}" alt="background-shape">
-    </section>
-    <!-- /newsletter -->
+    </div>
+    <div class="testimonial">
+        <div class="bg-blur-left">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-12 text-center">
+                        <p class="text-title-testimonial">Testimonials</p>
+                        <p class="text-subtitle-testimonial">Trust Our Clients</p>
+                    </div>
+                    <div class="col-12">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                @for ($i = 0; $i < 3; $i++)
+                                    <div class="swiper-slide">
+                                        <div class="row g-3 text-center">
+                                            <div class="col-12 text-center">
+                                                <img style="width: 75px;height:75px;"
+                                                    src="{{ asset('assets/img/profile.png') }}" alt="profile">
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-center">
+                                                <div style="width:60%; height:auto;">
+                                                    <p class="text-name-testimonial"><b style="color:#CA2026;">Arif Bijak
+                                                            Bestari</b> / PT. PLN (Persero)</p>
+                                                    <p>As a mobile application project user, I want to be able to seamlessly
+                                                        sync my
+                                                        app data across different devices, allowing me to view it from
+                                                        anywhere.
+                                                        The
+                                                        Sinergi Delapan crew is able to collaborate and work as a unit with
+                                                        ease.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endfor
+                            </div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="client">
+        {{-- <div class="bg-blur-bottom">
+            <div class="container-fluid">
+                <div class="swiper-client">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p>Test</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p>Test2</p>
+                        </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div> --}}
+    </div>
+    @push('script')
+        <script>
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    @endpush
 @endsection

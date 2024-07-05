@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\LandingPageController;
 
 /*
@@ -15,10 +18,12 @@ use App\Http\Controllers\LandingPageController;
 */
 
 Route::get('/', [LandingPageController::class, 'index'])
-    ->name('landingpage.view');
-Route::get('/aboutus', [LandingPageController::class, 'aboutus'])
-    ->name('aboutus.view');
-Route::get('/services', [LandingPageController::class, 'services'])
-    ->name('services.view');
-Route::get('/contactus', [LandingPageController::class, 'contactus'])
-    ->name('contactus.view');
+    ->name('home');
+Route::get('/about', [AboutController::class, 'index'])
+    ->name('about');
+Route::get('/service/professional', [ServicesController::class, 'service'])
+    ->name('professional-service');
+Route::get('/service/training', [ServicesController::class, 'training'])
+    ->name('training-service');
+Route::get('/contact', [ContactController::class, 'index'])
+    ->name('contact');

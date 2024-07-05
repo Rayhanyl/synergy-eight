@@ -1,71 +1,91 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<!doctype html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Synergy Eight</title>
-
-    <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- ** Plugins Needed for the Project ** -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap/bootstrap.min.css') }}">
-    <!-- themefy-icon -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/themify-icons/themify-icons.css') }}">
-    <!-- slick slider -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/slick/slick.css') }}">
-    <!-- venobox popup -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/Venobox/venobox.css') }}">
-    <!-- aos -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/aos/aos.css') }}">
-
-    <!-- Main Stylesheet -->
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-
-    <!--Favicon-->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
-    <link rel="icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
-
+    <title>Sinergi 8</title>
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" type="image/png" />
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.all.min.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-
-
-    <!-- navigation -->
-    <section class="fixed-top navigation">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="{{ route('landingpage.view') }}"><img
-                        src="{{ asset('assets/images/logo.png') }}" alt="logo"></a>
-                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar"
-                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- navbar -->
-                <div class="collapse navbar-collapse text-center" id="navbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link {{ Route::is('landingpage.view') ? 'active' : '' }}"
-                                href="{{ route('landingpage.view') }}">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link {{ Route::is('aboutus.view') ? 'active' : '' }}"
-                                href="{{ route('aboutus.view') }}">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link {{ Route::is('services.view') ? 'active' : '' }}"
-                                href="{{ route('services.view') }}">Service</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link {{ Route::is('contactus.view') ? 'active' : '' }}"
-                                href="{{ route('contactus.view') }}">Contact</a>
-                        </li>
-                    </ul>
-                    {{-- <a href="#" class="btn btn-primary ml-lg-3 primary-shadow">Try Free</a> --}}
+    <div class="bg-blur-top">
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg py-3" aria-label="Offcanvas navbar large">
+                <div class="container">
+                    <a class="navbar-brand" href="{{ route('home') }}">
+                        <img class="w-75" src="{{ asset('assets/img/logo-header.png') }}" alt="logo-header">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2"
+                        aria-labelledby="offcanvasNavbar2Label">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Route::is('home') ? 'active' : '' }}"
+                                        href="{{ route('home') }}">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Route::is('about') ? 'active' : '' }}"
+                                        href="{{ route('about') }}">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item {{ Route::is('professional-service') ? 'active' : '' }}"
+                                                href="{{ route('professional-service') }}">
+                                                Professional Services
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item {{ Route::is('training-service') ? 'active' : '' }}"
+                                                href="{{ route('training-service') }}">
+                                                IT Training
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="https://apicentrum.io/">
+                                                APIcentrum
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Route::is('contact') ? 'active' : '' }}"
+                                        href="{{ route('contact') }}">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
-        </div>
-    </section>
-    <!-- /navigation -->
+        </header>

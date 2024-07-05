@@ -1,61 +1,84 @@
-<!-- footer -->
-<footer class="footer-section footer" style="background-image: url(assets/images/backgrounds/footer-bg.png);">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-                <!-- logo -->
-                <a href="#">
-                    <img class="img-fluid" src="{{ asset('assets/images/logo.png') }}" alt="logo">
-                </a>
+    @if (!Route::is('contact'))
+        <footer>
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-7">
+                        <div class="row g-2">
+                            <div class="col-12">
+                                <img class="img-logo-footer" src="{{ asset('assets/img/logo-footer.png') }}"
+                                    alt="footer">
+                            </div>
+                            <div class="col-12">
+                                <p class="text-desc-footer">
+                                    Sinergi Delapan Mandiri is a leading provider of professional IT services, training,
+                                    and
+                                    API management solutions. We take pride in serving a diverse range of customers and
+                                    strive to exceed their expectations every step of the way.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-row">
+                                    <div class="">
+                                        <img class="w-100" src="{{ asset('assets/img/icon-ig-footer.png') }}"
+                                            alt="instagram">
+                                    </div>
+                                    <div class="">
+                                        <img class="w-100" src="{{ asset('assets/img/icon-linkin-footer.png') }}"
+                                            alt="instagram">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <p class="text-title-footer">Location</p>
+                                <p class="text-address-footer">Jl. Sido Mulyo No.31, Sukaluyu, Kec. Cibeunying Kaler,
+                                    Kota
+                                    Bandung, Jawa Barat 40123</p>
+                            </div>
+                            <div class="col-12">
+                                <p class="text-title-footer">Contact</p>
+                                <p class="text-email-footer">
+                                    <img class="img-email-footer" src="{{ asset('assets/img/icon-email-footer.png') }}"
+                                        alt="email">
+                                    info_sinergi@sinergi8.com
+                                </p>
+                                <p class="text-phone-footer">
+                                    <img class="img-phone-footer" src="{{ asset('assets/img/icon-phone-footer.png') }}"
+                                        alt="email">
+                                    (022) 2500442
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="text-copy-right">© 2024 Sinergi8. All Rights Reserved</p>
+                    </div>
+                </div>
             </div>
-            <!-- footer menu -->
-            <nav class="col-lg-8 align-self-center mb-5">
-                <ul class="list-inline text-lg-right text-center footer-menu">
-                    <li class="list-inline-item active"><a href="#">Jl. Sido Mulyo No.29, Sukaluyu, Kec.
-                            Cibeunying Kaler, Kota Bandung, Jawa Barat 40123</a></li>
-                    <li class="list-inline-item"><a href="#">swainfo@swamedia.co.id</a></li>
-                    <li class="list-inline-item"><a href="#">(022) 2500442</a></li>
-                </ul>
-            </nav>
-            <!-- footer social icon -->
-            <nav class="col-12">
-                <ul class="list-inline text-lg-right text-center social-icon">
-                    <li class="list-inline-item">
-                        <a class="facebook" href="https://www.facebook.com/swamedia"><i class="ti-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="instagram" href="https://www.instagram.com/swamedia/"><i class="ti-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="linkedin" href="https://www.linkedin.com/company/pt-swamedia-informatika"><i
-                                class="ti-linkedin"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="youtube" href="https://www.youtube.com/@pt.swamediainformatika1417"><i
-                                class="ti-youtube"></i></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</footer>
-<!-- /footer -->
+        </footer>
+    @endif
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('scroll', function() {
+            const header = document.querySelector('.fixed-top');
+            if (window.scrollY > 0) {
+                header.classList.add('bg-navbar');
+            } else {
+                header.classList.remove('bg-navbar');
+            }
+        });
+    </script>
+    @stack('script')
+    </body>
 
-<!-- jQuery -->
-<script src="{{ asset('assets/plugins/jQuery/jquery.min.js') }}"></script>
-<!-- Bootstrap JS -->
-<script src="{{ asset('assets/plugins/bootstrap/bootstrap.min.js') }}"></script>
-<!-- slick slider -->
-<script src="{{ asset('assets/plugins/slick/slick.min.js') }}"></script>
-<!-- venobox -->
-<script src="{{ asset('assets/plugins/Venobox/venobox.min.js') }}"></script>
-<!-- aos -->
-<script src="{{ asset('assets/plugins/aos/aos.js') }}"></script>
-<!-- Main Script -->
-<script src="{{ asset('assets/js/script.js') }}"></script>
-<script>
-    AOS.init();
-</script>
-</body>
-
-</html>
+    </html>
