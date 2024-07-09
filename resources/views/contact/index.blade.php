@@ -33,25 +33,26 @@
                 <div class="col-12 col-md-6 col-lg-6">
                     <div class="card rounded-3">
                         <div class="card-body">
-                            <form class="row g-3" action="#">
+                            <form class="row g-3" action="{{ route ('sendmail') }}" method="post">
+                                @csrf
                                 <div class="col-12 col-md-6">
                                     <label for="name" class="form-label fw-semibold">Name</label>
-                                    <input type="text" class="form-control" id="name"
+                                    <input type="text" class="form-control" id="name" name="name"
                                         placeholder="Enter your full name" required>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <label for="company" class="form-label fw-semibold">Company</label>
-                                    <input type="text" class="form-control" id="company"
+                                    <input type="text" class="form-control" id="company" name="company"
                                         placeholder="Enter your company name" required>
                                 </div>
                                 <div class="col-12">
                                     <label for="email" class="form-label fw-semibold">Email address</label>
-                                    <input type="email" class="form-control" id="email"
+                                    <input type="email" class="form-control" id="email" name="email"
                                         placeholder="Enter your email address" required>
                                 </div>
                                 <div class="col-12">
                                     <label for="phone_number" class="form-label fw-semibold">Phone Number</label>
-                                    <input type="number" class="form-control" id="phone_number"
+                                    <input type="number" class="form-control" id="phone_number" name="phone_number"
                                         placeholder="Enter a telephone number where you can be contacted" required>
                                 </div>
                                 <div class="col-12">
@@ -59,9 +60,10 @@
                                     <textarea class="form-control" name="message" id="message" cols="2" rows="2"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-danger rounded-5"
-                                        style="background-color:#CA2026 !important;">Send
-                                        Message</button>
+                                    <button type="submit" class="btn btn-danger rounded-5"
+                                        style="background-color:#CA2026 !important;">
+                                        Send Message
+                                    </button>
                                 </div>
                             </form>
                         </div>

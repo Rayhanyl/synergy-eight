@@ -55,11 +55,11 @@
     </div>
     </div>
     <div class="vision">
-        <div class="bg-blur-right">
+        <div class="">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-10 col-lg-10">
-                        <ul class="pt-3">
+                        <ul class="pt-3 pe-5">
                             <li>
                                 <p class="text-about-mission">
                                     Sinergi Delapan Mandiri aspires to be a leading force in the global IT landscape,
@@ -83,7 +83,7 @@
         </div>
     </div>
     <div class="mission">
-        <div class="bg-blur-left">
+        <div class="">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-2 col-lg-2">

@@ -89,7 +89,8 @@
                             <img style="width: 45px;height:45px;" src="{{ asset('assets/img/icon-service-2.png') }}"
                                 alt="">
                             <p class="my-2" style="font-weight: 600">Scaling Staf</p>
-                            <p>Allows flexible addition or removal of IT specialists, saving time and money on hiring and
+                            <p>Allows flexible addition or removal of IT specialists, saving time and money on hiring
+                                and
                                 training.</p>
                         </div>
                         <div class="col-4 text-center">

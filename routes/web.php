@@ -5,6 +5,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\Email\EmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,5 @@ Route::get('/service/training', [ServicesController::class, 'training'])
     ->name('training-service');
 Route::get('/contact', [ContactController::class, 'index'])
     ->name('contact');
+Route::post('/SendEmail', [EmailController::class, 'sendmail'])
+    ->name('sendmail');

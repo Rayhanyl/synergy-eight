@@ -14,7 +14,7 @@
                         programmers to upgrade their skills and advance their careers in the ever-evolving tech industry
                     </p>
                     <div class="py-2">
-                        <a class="btn btn-danger rounded-5 px-4 py-2 text-btn-hero">Read More <i
+                        <a href="{{ route('about') }}" class="btn btn-danger rounded-5 px-4 py-2 text-btn-hero">Read More <i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
@@ -114,7 +114,8 @@
                     </div>
                     <div class="col-12 col-lg-md-6 col-lg-5">
                         <div class="text-end">
-                            <img class="img-nextlevel" src="{{ asset('assets/img/logo-next-level.png') }}" alt="next level">
+                            <img class="img-nextlevel" src="{{ asset('assets/img/logo-next-level.png') }}"
+                                alt="next level">
                         </div>
                     </div>
                 </div>
@@ -187,11 +188,8 @@
                         <p class="text-subtitle-testimonial">Trust Our Clients</p>
                     </div>
                     <div class="col-12">
-                        <!-- Slider main container -->
-                        <div class="swiper">
-                            <!-- Additional required wrapper -->
+                        <div class="swiper swiper-testimonial">
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
                                 @for ($i = 0; $i < 3; $i++)
                                     <div class="swiper-slide">
                                         <div class="row g-3 text-center">
@@ -217,55 +215,131 @@
                                     </div>
                                 @endfor
                             </div>
-
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev swiper-button-prev-testimonial"></div>
+                            <div class="swiper-button-next swiper-button-next-testimonial"></div>
+                            <div class="swiper-pagination swiper-pagination-testimonial"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="client">
-        {{-- <div class="bg-blur-bottom">
-            <div class="container-fluid">
-                <div class="swiper-client">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <p>Test</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <p>Test2</p>
-                        </div>
+    <div class="client-landingpage">
+        <div class="swiper swiper-client">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width:150px;height:150px;" src="{{ asset('assets/img/client1.png') }}"
+                            alt="">
                     </div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width:150px;height:150px;" src="{{ asset('assets/img/client2.png') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width:150px;height:150px;" src="{{ asset('assets/img/client3.png') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width:150px;height:150px;" src="{{ asset('assets/img/client4.png') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width:100px;height:100px;" src="{{ asset('assets/img/client5.png') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width:120px;height:120px;" src="{{ asset('assets/img/client6.png') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width:100px;height:100px;" src="{{ asset('assets/img/client7.png') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width: 75px;height:75px;" src="{{ asset('assets/img/client8.png') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width: 75px;height:75px;" src="{{ asset('assets/img/client9.png') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width: 75px;height:75px;" src="{{ asset('assets/img/client10.png') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width: 100px;height:100px;" src="{{ asset('assets/img/client11.png') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width: 75px;height:75px;" src="{{ asset('assets/img/client12.png') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width:100px;height:100px;" src="{{ asset('assets/img/client13.png') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-img-client-landing-page">
+                        <img style="width:100px;height:100px;" src="{{ asset('assets/img/client14.png') }}"
+                            alt="">
+                    </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
     </div>
     @push('script')
         <script>
-            const swiper = new Swiper('.swiper', {
-                // Optional parameters
+            const swiper1 = new Swiper('.swiper-testimonial', {
                 direction: 'horizontal',
                 loop: true,
-
-                // If we need pagination
                 pagination: {
                     el: '.swiper-pagination',
                 },
-
-                // Navigation arrows
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
+            });
+
+            const swiper2 = new Swiper('.swiper-client', {
+                direction: 'horizontal',
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+                speed: 1000,
+                loop: true,
+                slidesPerView: 7,
+                allowTouchMove: false,
             });
         </script>
     @endpush
