@@ -1,5 +1,5 @@
     @if (!Route::is('contact'))
-        <footer>
+        <footer data-aos="fade-up" data-aos-duration="1000">
             <div class="bg-container-footer">
 
                 <div class="container">
@@ -75,7 +75,9 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        AOS.init();
         document.addEventListener('scroll', function() {
             const header = document.querySelector('.fixed-top');
             if (window.scrollY > 0) {

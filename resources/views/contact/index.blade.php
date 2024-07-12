@@ -2,7 +2,7 @@
 @section('content')
     <div class="contact">
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-5" data-aos="fade-up" data-aos-duration="2000">
                 <div class="col-12 text-center">
                     <p class="text-title-contact">Contact</p>
                     <p class="text-desc-contact">Get in touch and let us know how can we help you!</p>
@@ -31,9 +31,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
-                    <div class="card rounded-3">
+                    <div class="card rounded-3" style="border: 1px solid #c9c7c76a">
                         <div class="card-body">
-                            <form class="row g-3" action="{{ route('sendmail') }}" method="post">
+                            <form class="row g-4" action="{{ route('sendmail') }}" method="post">
                                 @csrf
                                 <div class="col-12 col-md-6">
                                     <label for="name" class="form-label fw-semibold">Name</label>

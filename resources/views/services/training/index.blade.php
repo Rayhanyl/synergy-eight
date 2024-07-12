@@ -3,7 +3,7 @@
     <div class="training">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="2000">
                     <p class="text-title-training">Start Your IT Career Today</p>
                     <p class="text-desc-training">In-depth training can help prepare you for a profession in a sector
                         requiring
@@ -11,7 +11,7 @@
                         improve your skills and start a career in networking, tech support, security, or database management
                     </p>
                 </div>
-                <div class="col-12 col-lg-6 text-end">
+                <div class="col-12 col-lg-6 text-end" data-aos="fade-left" data-aos-duration="2000">
                     <img style="width: 70%;" src="{{ asset('assets/img/logo-training-1.png') }}" alt="">
                 </div>
             </div>
@@ -21,10 +21,10 @@
     <div class="exploring">
         <div class="container">
             <div class="row g-5">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-down" data-aos-duration="2000">
                     <p class="text-title-exploring">Exploring the Advantages of IT Training</p>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="2000">
                     <div class="row g-5 d-flex justify-content-center">
                         <div class="col-4 text-center">
                             <img style="width: 50px;height:50px;" src="{{ asset('assets/img/icon-training-1.png') }}"
@@ -68,16 +68,16 @@
     <div class="upgrade">
         <div class="container">
             <div class="row g-3">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-down" data-aos-duration="2000">
                     <p class="text-title-upgrade">Upgrade Your IT Skills with Various Training Options</p>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-down" data-aos-duration="2000">
                     <p class="text-desc-upgrade">Elevate your IT skills with a range of dynamic training options tailored to
                         your needs. Each format
                         is designed to equip you with the latest knowledge and practical expertise, ensuring you stay ahead
                         in the fast-evolving tech landscape. </p>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="zoom-in" data-aos-duration="1800">
                     <div class="row">
 
                         <div class="col-12 col-lg-3">
