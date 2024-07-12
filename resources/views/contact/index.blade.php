@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
                     <p style="color:#CA2026;font-weight:bold;">PT SINERGI 8</p>
-                    <P class="pe-5">Jl. Sido Mulyo No.31, Sukaluyu, Kec. Cibeunying Kaler, Kota Bandung, Jawa Barat 40123
+                    <P class="pe-5">Jl. Sido Mulyo No. 31, Sukaluyu, Kec. Cibeunying Kaler, Kota Bandung, Jawa Barat 40123
                     </P>
                     <p class="text-email-footer">
                         <img class="img-email-footer" src="{{ asset('assets/img/icon-email-footer.png') }}" alt="email">
@@ -33,7 +33,7 @@
                 <div class="col-12 col-md-6 col-lg-6">
                     <div class="card rounded-3">
                         <div class="card-body">
-                            <form class="row g-3" action="{{ route ('sendmail') }}" method="post">
+                            <form class="row g-3" action="{{ route('sendmail') }}" method="post">
                                 @csrf
                                 <div class="col-12 col-md-6">
                                     <label for="name" class="form-label fw-semibold">Name</label>
@@ -51,7 +51,7 @@
                                         placeholder="Enter your email address" required>
                                 </div>
                                 <div class="col-12">
-                                    <label for="phone_number" class="form-label fw-semibold">Phone Number</label>
+                                    <label for="phone_number" class="form-label fw-semibold">Phone Number (WhatsApp)</label>
                                     <input type="number" class="form-control" id="phone_number" name="phone_number"
                                         placeholder="Enter a telephone number where you can be contacted" required>
                                 </div>

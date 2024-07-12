@@ -18,7 +18,7 @@
                         Additionally, Sinergi Delapan Mandiri offers APIcentrum, an advanced API management platform that
                         streamlines processes and integrates systems for businesses, government organizations, and
                         individuals. Committed to community engagement and maintaining dignity in all their work, they help
-                        clients succeed in today's competitive market. Contact them to learn how they can help your business
+                        clients succeed in today's competitive market. Contact us to learn how we can help your business
                         thrive.
                     </p>
                 </div>
@@ -87,8 +87,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-2 col-lg-2">
-                        <p class="text-title-vision">MISSION</p>
-                        <div class="text-end">
+                        <p class="text-title-vision text-end">MISSION</p>
+                        <div class="text-end ">
                             <img style="width:55px;height:45px;" src="{{ asset('assets/img/mission.png') }}" alt="vision">
                         </div>
                     </div>
@@ -149,7 +149,8 @@
                         <div class="col-1">
                         </div>
                         <div class="col-10 text-center">
-                            <p>Company's commitments to achieving excellence, embracing philanthropy as a core value, and
+                            <p>Company's commitments to achieving excellence, embracing philanthropy as a core value, <br>
+                                and
                                 upholding
                                 integrity in all aspects of their operations.</p>
                         </div>

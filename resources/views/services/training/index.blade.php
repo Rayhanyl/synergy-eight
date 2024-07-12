@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <p class="text-title-training">Star Your IT Career Today</p>
+                    <p class="text-title-training">Start Your IT Career Today</p>
                     <p class="text-desc-training">In-depth training can help prepare you for a profession in a sector
                         requiring
                         highly specialized abilities, such as information technology. Pursuing IT training could help you

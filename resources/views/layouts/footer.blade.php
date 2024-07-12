@@ -1,62 +1,68 @@
     @if (!Route::is('contact'))
         <footer>
-            <div class="container">
-                <div class="row g-3">
-                    <div class="col-12 col-md-6 col-lg-7">
-                        <div class="row g-2">
-                            <div class="col-12">
-                                <img class="img-logo-footer" src="{{ asset('assets/img/logo-footer.png') }}"
-                                    alt="footer">
-                            </div>
-                            <div class="col-12">
-                                <p class="text-desc-footer">
-                                    Sinergi Delapan Mandiri is a leading provider of professional IT services, training,
-                                    and
-                                    API management solutions. We take pride in serving a diverse range of customers and
-                                    strive to exceed their expectations every step of the way.
-                                </p>
-                            </div>
-                            <div class="col-12">
-                                <div class="d-flex flex-row">
-                                    <div class="">
-                                        <img class="w-100" src="{{ asset('assets/img/icon-ig-footer.png') }}"
-                                            alt="instagram">
-                                    </div>
-                                    <div class="">
-                                        <img class="w-100" src="{{ asset('assets/img/icon-linkin-footer.png') }}"
-                                            alt="instagram">
+            <div class="bg-container-footer">
+
+                <div class="container">
+                    <div class="row g-3 p-3">
+                        <div class="col-12 col-md-6 col-lg-7">
+                            <div class="row g-2">
+                                <div class="col-12">
+                                    <img class="img-logo-footer" src="{{ asset('assets/img/logo-footer.png') }}"
+                                        alt="footer">
+                                </div>
+                                <div class="col-12">
+                                    <p class="text-desc-footer">
+                                        Sinergi Delapan Mandiri is a leading provider of professional IT services,
+                                        training,
+                                        and
+                                        API management solutions. We take pride in serving a diverse range of customers
+                                        and
+                                        strive to exceed their expectations every step of the way.
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex flex-row">
+                                        <div class="">
+                                            <img class="w-100" src="{{ asset('assets/img/icon-ig-footer.png') }}"
+                                                alt="instagram">
+                                        </div>
+                                        <div class="">
+                                            <img class="w-100" src="{{ asset('assets/img/icon-linkin-footer.png') }}"
+                                                alt="instagram">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-5">
-                        <div class="row g-3">
-                            <div class="col-12">
-                                <p class="text-title-footer">Location</p>
-                                <p class="text-address-footer">Jl. Sido Mulyo No.31, Sukaluyu, Kec. Cibeunying Kaler,
-                                    Kota
-                                    Bandung, Jawa Barat 40123</p>
-                            </div>
-                            <div class="col-12">
-                                <p class="text-title-footer">Contact</p>
-                                <p class="text-email-footer">
-                                    <img class="img-email-footer" src="{{ asset('assets/img/icon-email-footer.png') }}"
-                                        alt="email">
-                                    info_sinergi@sinergi8.com
-                                </p>
-                                <p class="text-phone-footer">
-                                    <img class="img-phone-footer" src="{{ asset('assets/img/icon-phone-footer.png') }}"
-                                        alt="email">
-                                    (022) 2500442
-                                </p>
+                        <div class="col-12 col-md-6 col-lg-5">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <p class="text-title-footer">Location</p>
+                                    <p class="text-address-footer">Jl. Sido Mulyo No.31, Sukaluyu, Kec. Cibeunying
+                                        Kaler,
+                                        Kota
+                                        Bandung, Jawa Barat 40123</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="text-title-footer">Contact</p>
+                                    <p class="text-email-footer">
+                                        <img class="img-email-footer me-3"
+                                            src="{{ asset('assets/img/icon-email-footer.png') }}" alt="email">
+                                        info_sinergi@sinergi8.com
+                                    </p>
+                                    <p class="text-phone-footer">
+                                        <img class="img-phone-footer me-3"
+                                            src="{{ asset('assets/img/icon-phone-footer.png') }}" alt="email">
+                                        (022) 2500442
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 text-center">
-                        <p class="text-copy-right">© 2024 Sinergi8. All Rights Reserved</p>
-                    </div>
                 </div>
+            </div>
+            <div class="col-12 text-center mt-4">
+                <p class="text-copy-right">© 2024 Sinergi8. All Rights Reserved</p>
             </div>
         </footer>
     @endif

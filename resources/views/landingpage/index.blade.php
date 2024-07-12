@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-7">
-                    <p class="text-title-hero">Enhance Your Business <br> with Sinergi Delapan</p>
+                    <p class="text-title-hero">Enhance Your Business with <br> Sinergi Delapan</p>
                     <p class="text-desc-hero">Sinergi Delapan Mandiri is a leading provider of
                         professional IT services,
                         training, and API
@@ -13,7 +13,7 @@
                         delivery to meet the unique needs of our clients. Through our IT training programs, we empower
                         programmers to upgrade their skills and advance their careers in the ever-evolving tech industry
                     </p>
-                    <div class="py-2">
+                    <div class="py-3">
                         <a href="{{ route('about') }}" class="btn btn-danger rounded-5 px-4 py-2 text-btn-hero">Read More <i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
@@ -36,49 +36,51 @@
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4 hover-service p-4 text-center">
-                            <img class="img-service-training" src="{{ asset('assets/img/icon-training.png') }}"
-                                alt="training">
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="">
-                                    <p class="text-title-service" style="color:#E89F00;">Professional Services</p>
+                            <a style="text-decoration: none;color:#E89F00;" href="{{ route('professional-service') }}">
+                                <img class="img-service-training" src="{{ asset('assets/img/icon-training.png') }}"
+                                    alt="training">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="">
+                                        <p class="text-title-service" style="color:#E89F00;">Professional Services</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="text-desc-service">Provide IT Specialist for reliable solutions and
+                                            seamlessly
+                                            delivery</p>
+                                    </div>
                                 </div>
-                                <div class="">
-                                    <p class="text-desc-service">Provide IT Specialist for reliable solutions and seamlessly
-                                        delivery</p>
-                                </div>
-                            </div>
-                            <a class="" href="{{ route('professional-service') }}">
                                 <img class="img-icon-arrow" src="{{ asset('assets/img/icon-arrow.png') }}" alt="arrow">
                             </a>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 hover-service p-4 text-center">
-                            <img class="img-service-service" src="{{ asset('assets/img/icon-service.png') }}"
-                                alt="service">
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="">
-                                    <p class="text-title-service" style="color:#FB563F;">IT Training</p>
+                            <a style="text-decoration: none;color:#FB563F;" href="{{ route('training-service') }}">
+                                <img class="img-service-service" src="{{ asset('assets/img/icon-service.png') }}"
+                                    alt="service">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="">
+                                        <p class="text-title-service">IT Training</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="text-desc-service">Provide IT Training for Programmers to upgrade their
+                                            skills
+                                            and careers</p>
+                                    </div>
                                 </div>
-                                <div class="">
-                                    <p class="text-desc-service">Provide IT Training for Programmers to upgrade their skills
-                                        and careers</p>
-                                </div>
-                            </div>
-                            <a class="" href="{{ route('training-service') }}">
                                 <img class="img-icon-arrow" src="{{ asset('assets/img/icon-arrow.png') }}" alt="arrow">
                             </a>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 hover-service p-4 text-center">
-                            <img class="img-service-api" src="{{ asset('assets/img/icon-api.png') }}" alt="api">
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="">
-                                    <p class="text-title-service" style="color:#3A4864;">APIcentrum</p>
+                            <a style="text-decoration: none;color:#3A4864;" href="https://apicentrum.io/">
+                                <img class="img-service-api" src="{{ asset('assets/img/icon-api.png') }}" alt="api">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="">
+                                        <p class="text-title-service">APIcentrum</p>
+                                    </div>
+                                    <div class="">
+                                        <p class="text-desc-service">Provide API Manager for business, government, and
+                                            individual</p>
+                                    </div>
                                 </div>
-                                <div class="">
-                                    <p class="text-desc-service">Provide API Manager for business, government, and
-                                        individual</p>
-                                </div>
-                            </div>
-                            <a class="" href="https://apicentrum.io/">
                                 <img class="img-icon-arrow" src="{{ asset('assets/img/icon-arrow.png') }}" alt="arrow">
                             </a>
                         </div>
@@ -184,36 +186,74 @@
             <div class="container">
                 <div class="row g-5">
                     <div class="col-12 text-center">
-                        <p class="text-title-testimonial">Testimonials</p>
+                        <p class="text-title-testimonial">TESTIMONIALS</p>
                         <p class="text-subtitle-testimonial">Trust Our Clients</p>
                     </div>
                     <div class="col-12">
                         <div class="swiper swiper-testimonial">
                             <div class="swiper-wrapper">
-                                @for ($i = 0; $i < 3; $i++)
-                                    <div class="swiper-slide">
-                                        <div class="row g-3 text-center">
-                                            <div class="col-12 text-center">
-                                                <img style="width: 75px;height:75px;"
-                                                    src="{{ asset('assets/img/profile.png') }}" alt="profile">
-                                            </div>
-                                            <div class="col-12 d-flex justify-content-center">
-                                                <div style="width:60%; height:auto;">
-                                                    <p class="text-name-testimonial"><b style="color:#CA2026;">Arif Bijak
-                                                            Bestari</b> / PT. PLN (Persero)</p>
-                                                    <p>As a mobile application project user, I want to be able to seamlessly
-                                                        sync my
-                                                        app data across different devices, allowing me to view it from
-                                                        anywhere.
-                                                        The
-                                                        Sinergi Delapan crew is able to collaborate and work as a unit with
-                                                        ease.
-                                                    </p>
-                                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row g-3 text-center">
+                                        <div class="col-12 text-center">
+                                            <img style="width: 75px;height:75px;"
+                                                src="{{ asset('assets/img/profile.png') }}" alt="profile">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <div style="width:60%; height:auto;">
+                                                <p class="text-name-testimonial"><b style="color:#CA2026;">Arif Bijak
+                                                        Bestari</b> / PT. PLN (Persero)</p>
+                                                <p>As a mobile application project user, I want to be able to seamlessly
+                                                    sync my
+                                                    app data across different devices, allowing me to view it from
+                                                    anywhere.
+                                                    The
+                                                    Sinergi Delapan crew is able to collaborate and work as a unit with
+                                                    ease.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                @endfor
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row g-3 text-center">
+                                        <div class="col-12 text-center">
+                                            <img style="width: 75px;height:75px;"
+                                                src="{{ asset('assets/img/profile.png') }}" alt="profile">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <div style="width:60%; height:auto;">
+                                                <p class="text-name-testimonial"><b style="color:#CA2026;">Odi
+                                                        Ariyanto</b> / PT. Smartfren Telecom</p>
+                                                <p>Sinergi Delapan offers experienced programmers. The programmer can
+                                                    perform code, presentations, and collaborate with outside parties.
+                                                    "Always dependable and quick; even after I leave for the day, I can
+                                                    always count on you to complete requests. Thank you
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row g-3 text-center">
+                                        <div class="col-12 text-center">
+                                            <img style="width: 75px;height:75px;"
+                                                src="{{ asset('assets/img/profile.png') }}" alt="profile">
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <div style="width:60%; height:auto;">
+                                                <p class="text-name-testimonial"><b style="color:#CA2026;">Adhitya
+                                                        Hermawan</b> / PT. Distribusi Sentra Jaya</p>
+                                                <p>We've been working together since 2018, and they called me right away to
+                                                    say they were monitoring the matter and would keep me updated on any new
+                                                    information they could find. Fortunately, Sinergi Delapan is not just
+                                                    our behind-the-scenes collaborator, but he is also there for us when we
+                                                    need them. Continue to increase quality and good service for users, and
+                                                    develop your personnel's talents.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="swiper-button-prev swiper-button-prev-testimonial"></div>
                             <div class="swiper-button-next swiper-button-next-testimonial"></div>

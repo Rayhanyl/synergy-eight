@@ -4,30 +4,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <p class="text-title-professional">Professional Service</p>
-                    <p style="text-align:left;">Contracting with outside service providers to deliver applications,
-                        infrastructure solutions, and
-                        business processes supported by IT to meet organizational goals.</p>
-                    <div class="d-flex">
+                    <div>
+                        <p class="text-title-professional">Professional Service</p>
+                    </div>
+                    <div>
+                        <p style="text-align:left;">Contracting with outside service providers to deliver applications,
+                            infrastructure solutions, and
+                            business processes supported by IT to meet organizational goals.</p>
+                    </div>
+                    <div class="d-flex mt-2">
                         <div class="py-2 pe-4 text-left">
                             <img style="width:30px;height:30px;" src="{{ asset('assets/img/icon-traced-1.png') }}"
                                 alt="">
-                            <p class="my-2">Sourcing <br>Tactics</p>
+                            <p class="my-3">Sourcing <br>Tactics</p>
                         </div>
                         <div class="py-2 px-4 text-left">
                             <img style="width:30px;height:30px;" src="{{ asset('assets/img/icon-traced-2.png') }}"
                                 alt="">
-                            <p class="my-2">Supplier <br>Selection</p>
+                            <p class="my-3">Supplier <br>Selection</p>
                         </div>
                         <div class="py-2 px-4 text-left">
                             <img style="width:30px;height:30px;" src="{{ asset('assets/img/icon-traced-3.png') }}"
                                 alt="">
-                            <p class="my-2">Contract <br>Design</p>
+                            <p class="my-3">Contract <br>Design</p>
                         </div>
                         <div class="py-2 ps-4 text-left">
                             <img style="width:30px;height:30px;" src="{{ asset('assets/img/icon-traced-4.png') }}"
                                 alt="">
-                            <p class="my-2">Governance <br>for Partnerships</p>
+                            <p class="my-3">Governance <br>for Partnerships</p>
                         </div>
                     </div>
                 </div>
@@ -59,7 +63,7 @@
                             <p style="text-align:justify;line-height: 35px">
                                 IT outsourcing involves contracting third-party contractors for technology-related services
                                 like software development, network management, and technical support. Unlike business
-                                process or manufacturing outsourcing, it focuses on technology-driven tasks. in order to
+                                process or manufacturing outsourcing, it focuses on technology-driven tasks in order to
                                 increase productivity, lower costs, and provide access to specialized expertise.
                             </p>
                         </div>
@@ -103,17 +107,17 @@
                         <div class="col-1">
                         </div>
                         <div class="col-4 text-center">
-                            <img style="width: 40px;height:40px;" src="{{ asset('assets/img/icon-service-4.png') }}"
+                            <img style="width: 35px;height:37px;" src="{{ asset('assets/img/icon-service-4.png') }}"
                                 alt="">
                             <p class="my-2" style="font-weight: 600">Improved Security</p>
-                            <p>Access to additional security services, enhances cybersecurity, and reduces potential
+                            <p>Access to additional security services, enhances cyber security, and reduces potential
                                 attacks.</p>
                         </div>
                         <div class="col-4 text-center">
                             <img style="width: 40px;height:40px;" src="{{ asset('assets/img/icon-service-5.png') }}"
                                 alt="">
                             <p class="my-2" style="font-weight: 600">Essential Functions</p>
-                            <p>Enables firms to integrate essential services like data storage and security bypassing
+                            <p>Enables firms to integrate essential services like data storage and security by passing
                                 capital constraints.</p>
                         </div>
                         <div class="col-1">
