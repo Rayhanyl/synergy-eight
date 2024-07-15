@@ -1,94 +1,25 @@
 /* For Tablet View */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    body {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 14px;
-    }
+@media only screen and (min-width: 768px) {
     .hero {
-        padding: 80px 0px;
+        padding: 100px 0px;
     }
     .img-hero {
         width: 90%;
     }
     .text-title-hero {
-        font-size: 38px;
-        font-weight: bold;
+        font-size: 2px;
+        font-weight: 500;
     }
     .text-desc-hero {
-        font-size: 14px;
+        font-size: 16px;
         text-align: justify;
-        line-height: 25px;
+        line-height: 30px;
     }
-    .text-title-head-service {
-        font-size: 38px;
-        font-weight: bold;
+    .text-btn-hero {
+        background-color: #ca2026 !important;
     }
-    .img-service-training {
-        width: 50px;
-        height: 50px;
+    .text-btn-hero:hover {
+        background-color: #ae1c21 !important;
     }
-    .img-service-api {
-        width: 50px;
-        height: 50px;
-    }
-    .img-service-service {
-        width: 50px;
-        height: 50px;
-    }
-    .img-icon-arrow {
-        width: 20%;
-        height: auto;
-    }
-    .text-title-service {
-        font-weight: bold;
-        font-size: 18px;
-        margin: 15px 0px;
-    }
-    .text-desc-service {
-        font-size: 14px;
-        max-width: 300px;
-        text-align: center;
-    }
-    footer {
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }
-    .text-title-footer {
-        font-size: 14px;
-        font-weight: bold;
-    }
-    .img-logo-footer {
-        width: 20%;
-        height: auto;
-    }
-    .text-desc-footer {
-        font-size: 12px;
-        max-width: 80%;
-        line-height: 25px;
-        text-align: justify;
-    }
-    .text-address-footer {
-        font-size: 12px;
-    }
-    .text-email-footer {
-        font-size: 12px;
-    }
-    .text-phone-footer {
-        font-size: 12px;
-    }
-    .img-email-footer {
-        width: 20px;
-        height: 20px;
-    }
-    .img-phone-footer {
-        width: 20px;
-        height: 20px;
-    }
-    .text-copy-right {
-        color: #b5aeae;
-        font-size: 12px;
-    }
+    /* Hero */
 }

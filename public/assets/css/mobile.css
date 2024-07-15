@@ -1,23 +1,263 @@
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0px 30px !important;
+    }
+    .swiper.swiper-testimonial {
+        width: 100%;
+        height: 400px;
+    }
+    .swiper-button-next.swiper-button-next-testimonial {
+        background-color: #ca2026 !important;
+        padding: 30px;
+        color: white !important;
+        border-radius: 100%;
+        vertical-align: middle;
+    }
+    .swiper-button-prev.swiper-button-prev-testimonial {
+        background-color: white !important;
+        padding: 30px;
+        color: black !important;
+        border-radius: 100%;
+        vertical-align: middle;
+    }
+    .swiper-pagination-bullet-active {
+        background: #ca2026 !important;
+    }
+    .swiper.swiper-testimonial {
+        --swiper-navigation-size: 20px;
+    }
+    .swiper.swiper-client {
+        width: 100%;
+        height: 100%;
+    }
+    .box-img-client-landing-page {
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-img-client-landing-page img {
+        object-fit: contain;
+    }
+    .custom-hr {
+        background: #f12711; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+            to right,
+            #f5af19,
+            #f12711
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+            to right,
+            #f5af19,
+            #f12711
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        border: 2px solid transparent;
+        width: 40%;
+        height: 5px;
+        margin-top: 20px;
+    }
+    /* Custom */
+    .hero {
+        padding: 100px 0px 50px 0px;
+    }
+    .img-hero {
+        width: 90%;
+    }
+    .text-title-hero {
+        font-size: 26px;
+        font-weight: 500;
+    }
+    .text-desc-hero {
+        font-size: 16px;
+        text-align: justify;
+        line-height: 30px;
+    }
+    .text-btn-hero {
+        background-color: #ca2026 !important;
+    }
+    .text-btn-hero:hover {
+        background-color: #ae1c21 !important;
+    }
+    /* Hero */
+    .text-title-head-service {
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .img-service-training {
+        width: 50px;
+        height: 50px;
+    }
+    .img-service-api {
+        width: 50px;
+        height: 50px;
+    }
+    .img-service-service {
+        width: 50px;
+        height: 50px;
+    }
+    .img-icon-arrow {
+        width: 18%;
+        height: auto;
+    }
+
+    .text-title-service {
+        font-weight: 500;
+        font-size: 22px;
+        margin: 15px 0px;
+    }
+
+    .hover-service:hover .text-title-service {
+        font-size: 24px;
+    }
+
+    .hover-service:hover .text-desc-service {
+        font-size: 18px;
+    }
+
+    .text-desc-service {
+        font-size: 16px;
+        max-width: 300px;
+        text-align: center;
+    }
+    /* Service */
+    .next-level {
+        padding: 30px 0px 20px 0px;
+    }
+    .img-nextlevel {
+        width: 60%;
+    }
+    .position-nextlevel-img {
+        text-align: center;
+    }
+    .postion-custom-hr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-title-nextlevel {
+        font-size: 32px;
+        text-align: center;
+    }
+    .text-desc-nextlevel {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+    }
+    /* Next level */
+    .trusted-partner {
+        padding: 50px 0px;
+    }
+    .img-trusted {
+        width: 50%;
+    }
+    .position-trusted-img {
+        text-align: center;
+    }
+    .text-number-trusted {
+        font-weight: 700;
+        font-size: 22px;
+        color: #ca2026;
+        margin: 5px 0px;
+    }
+    /* Trusted */
+    .testimonial {
+        padding-top: 0px;
+    }
+    .text-title-testimonial {
+        font-size: 22px;
+        color: #e5a413;
+        letter-spacing: 7px;
+    }
+    .text-subtitle-testimonial {
+        font-size: 42px;
+        font-weight: 500;
+        color: #191825;
+    }
+    .text-name-testimonial {
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .client-landingpage {
+        padding: 40px 0px;
+    }
+    /* Testimonial */
+    footer {
+        padding-top: 60px;
+        padding-bottom: 10px;
+        background-color: #ffffff61;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .text-title-footer {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .img-logo-footer {
+        width: 20%;
+        height: auto;
+    }
+    .text-desc-footer {
+        font-size: 14px;
+        max-width: 80%;
+        line-height: 25px;
+        text-align: justify;
+    }
+    .text-address-footer {
+        font-size: 14px;
+    }
+    .text-email-footer {
+        font-size: 14px;
+    }
+    .text-phone-footer {
+        font-size: 14px;
+    }
+    .img-email-footer {
+        width: 20px;
+        height: 20px;
+    }
+    .img-phone-footer {
+        width: 20px;
+        height: 20px;
+    }
+    .text-copy-right {
+        color: #b5aeae;
+        font-size: 14px;
+    }
+
+    .bg-container-footer {
+        background-color: #f9f9f9;
+        border-radius: 25px;
+    }
+
+    /* Footer */
 }
 
-/* For Mobile Landscape View */
-@media screen and (max-device-width: 640px) and (orientation: landscape) {
-}
-
-/* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 640px) {
-}
-
-/* For iPhone 4 Portrait or Landscape View */
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* For iPhone 5 Portrait or Landscape View */
-@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* For iPhone 6 and 6 plus Portrait or Landscape View */
-@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .hero {
+        padding: 100px 0px;
+    }
+    .img-hero {
+        width: 90%;
+    }
+    .text-title-hero {
+        font-size: 26px;
+        font-weight: 500;
+    }
+    .text-desc-hero {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 30px;
+    }
+    .text-btn-hero {
+        background-color: #ca2026 !important;
+    }
+    .text-btn-hero:hover {
+        background-color: #ae1c21 !important;
+    }
+    /* Hero */
 }

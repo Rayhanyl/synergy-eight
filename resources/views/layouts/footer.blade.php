@@ -1,5 +1,5 @@
     @if (!Route::is('contact'))
-        <footer data-aos="fade-up" data-aos-duration="1000">
+        <footer>
             <div class="bg-container-footer">
 
                 <div class="container">

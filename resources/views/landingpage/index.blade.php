@@ -18,7 +18,7 @@
                                 class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5" data-aos="fade-left" data-aos-duration="2000">
+                <div class="col-12 col-md-6 col-lg-5 d-none d-md-block" data-aos="fade-left" data-aos-duration="2000">
                     <div class="text-end">
                         <img class="img-hero" src="{{ asset('assets/img/hero.png') }}" alt="hero">
                     </div>
@@ -94,9 +94,9 @@
         <div class="bg-blur-right">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-md-6 col-lg-7 d-flex align-items-end">
+                    <div class="col-12 col-lg-md-6 col-lg-7 d-flex align-items-end order-last order-md-first">
                         <div class="row g-3" data-aos="fade-right" data-aos-duration="2000">
-                            <div class="col-12">
+                            <div class="col-12 postion-custom-hr">
                                 <div class="custom-hr"></div>
                             </div>
                             <div class="col-12">
@@ -115,8 +115,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-md-6 col-lg-5">
-                        <div class="text-end" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="col-12 col-lg-md-6 col-lg-5 order-first order-md-last">
+                        <div class="position-nextlevel-img" data-aos="fade-left" data-aos-duration="2000">
                             <img class="img-nextlevel" src="{{ asset('assets/img/logo-next-level.png') }}"
                                 alt="next level">
                         </div>
@@ -129,13 +129,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-5">
-                    <div class="text-right" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="position-trusted-img" data-aos="fade-right" data-aos-duration="2000">
                         <img class="img-trusted" src="{{ asset('assets/img/logo-trusted.png') }}" alt="trusted">
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-7 d-flex align-items-end">
                     <div class="row g-3">
-                        <div class="col-12" data-aos="fade-down" data-aos-duration="2000">
+                        <div class="col-12 postion-custom-hr" data-aos="fade-down" data-aos-duration="2000">
                             <div class="custom-hr"></div>
                         </div>
                         <div class="col-12" data-aos="fade-down" data-aos-duration="2000">
@@ -159,7 +159,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-4">
+                                <div class="col-6 col-md-6 col-lg-4">
                                     <div class="card rounded-5">
                                         <div class="card-body text-center">
                                             <p class="text-number-trusted">5+</p>
@@ -167,7 +167,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-4">
+                                <div class="col-6 col-md-6 col-lg-4">
                                     <div class="card rounded-5">
                                         <div class="card-body text-center">
                                             <p class="text-number-trusted">10+</p>
@@ -379,8 +379,24 @@
                 },
                 speed: 1000,
                 loop: true,
-                slidesPerView: 7,
                 allowTouchMove: false,
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                        slidesPerView: 3,
+                        spaceBetween: 10
+                    },
+                    // when window width is >= 480px
+                    480: {
+                        slidesPerView: 3,
+                        spaceBetween: 10
+                    },
+                    // when window width is >= 640px
+                    640: {
+                        slidesPerView: 7,
+                        spaceBetween: 30
+                    }
+                }
             });
         </script>
     @endpush
