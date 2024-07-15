@@ -35,7 +35,7 @@
                         You</p>
                 </div>
                 <div class="col-12" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="row">
+                    <div class="row g-3">
                         <div class="col-12 col-md-6 col-lg-4 hover-service p-4 text-center">
                             <a style="text-decoration: none;color:#E89F00;" href="{{ route('professional-service') }}">
                                 <img class="img-service-training" src="{{ asset('assets/img/icon-training.png') }}"
