@@ -3,7 +3,7 @@
     <div class="professional">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                <div class="col-12 col-lg-6">
                     <div>
                         <p class="text-title-professional">Professional Service</p>
                     </div>
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 text-end" data-aos="fade-left" data-aos-duration="2000">
+                <div class="col-12 col-lg-6 text-end">
                     <img style="width: 85%;" src="{{ asset('assets/img/logo-service-1.png') }}" alt="">
                 </div>
             </div>
@@ -45,21 +45,21 @@
     <div class="outsourcing">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-5" data-aos="fade-right" data-aos-duration="2000">
+                <div class="col-12 col-lg-5">
                     <img style="width: 83%;" src="{{ asset('assets/img/logo-service-2.png') }}" alt="">
                 </div>
                 <div class="col-12 col-lg-7 pt-5">
                     <div class="row g-3">
-                        <div class="col-12" data-aos="fade-down" data-aos-duration="2000">
+                        <div class="col-12">
                             <div class="custom-hr"></div>
                         </div>
-                        <div class="col-12" data-aos="fade-down" data-aos-duration="2000">
+                        <div class="col-12">
                             <p class="text-title-outsourcing">How is
                                 <span style="font-weight:600;">IT Outsourcing</span> Different from Other
                                 Types of Outsourcing?
                             </p>
                         </div>
-                        <div class="col-12" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="col-12">
                             <p style="text-align:justify;line-height: 35px">
                                 IT outsourcing involves contracting third-party contractors for technology-related services
                                 like software development, network management, and technical support. Unlike business
@@ -75,10 +75,10 @@
     <div class="adventages">
         <div class="container">
             <div class="row g-4">
-                <div class="col-12" data-aos="fade-down" data-aos-duration="2000">
+                <div class="col-12">
                     <p class="text-title-adventages">Exploring the Advantages of IT Outsourcing</p>
                 </div>
-                <div class="col-12" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-12">
                     <div class="row g-5 d-flex justify-content-center">
                         <div class="col-4 text-center">
                             <img style="width: 50px;height:50px;" src="{{ asset('assets/img/icon-service-1.png') }}"

@@ -2,7 +2,7 @@
 @section('content')
     <div class="contact">
         <div class="container">
-            <div class="row g-5" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row g-5">
                 <div class="col-12 text-center">
                     <p class="text-title-contact">Contact</p>
                     <p class="text-desc-contact">Get in touch and let us know how can we help you!</p>

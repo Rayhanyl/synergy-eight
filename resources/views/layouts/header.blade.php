@@ -37,8 +37,8 @@
                     <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2"
                         aria-labelledby="offcanvasNavbar2Label">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Sinergi8</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">

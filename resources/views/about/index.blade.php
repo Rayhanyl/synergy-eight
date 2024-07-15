@@ -1,6 +1,6 @@
 @extends('app')
 @section('content')
-    <div class="about" data-aos="fade-up" data-aos-duration="2000">
+    <div class="about">
         <div class="container">
             <div class="row g-5">
                 <div class="col-12 text-center">
@@ -58,7 +58,7 @@
         <div class="">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-10 col-lg-10" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="col-12 col-md-10 col-lg-10">
                         <ul class="pt-3 pe-5">
                             <li>
                                 <p class="text-about-mission">
@@ -74,7 +74,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-2 col-lg-2" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="col-12 col-md-2 col-lg-2">
                         <p class="text-title-vision">VISION</p>
                         <img style="width:55px;height:45px;" src="{{ asset('assets/img/vision.png') }}" alt="vision">
                     </div>
@@ -86,13 +86,13 @@
         <div class="">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-2 col-lg-2" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="col-12 col-md-2 col-lg-2">
                         <p class="text-title-vision text-end">MISSION</p>
                         <div class="text-end ">
                             <img style="width:55px;height:45px;" src="{{ asset('assets/img/mission.png') }}" alt="vision">
                         </div>
                     </div>
-                    <div class="col-12 col-md-10 col-lg-10" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="col-12 col-md-10 col-lg-10">
                         <ul class="pt-3 ps-5">
                             <li>
                                 <p class="text-about-mission">
@@ -129,22 +129,22 @@
     <div class="value">
         <div class="container">
             <div class="row g-5">
-                <div class="col-12" data-aos="fade-down" data-aos-duration="2000">
+                <div class="col-12">
                     <p class="text-title-value">Our Value</p>
                 </div>
-                <div class="col-12 col-lg-4 text-center" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-12 col-lg-4 text-center">
                     <p>Winning</p>
                     <img class="w-25" src="{{ asset('assets/img/our-value-1.png') }}" alt="logo our value 1">
                 </div>
-                <div class="col-12 col-lg-4 text-center" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-12 col-lg-4 text-center">
                     <p>Giving</p>
                     <img class="w-25" src="{{ asset('assets/img/our-value-2.png') }}" alt="logo our value 2">
                 </div>
-                <div class="col-12 col-lg-4 text-center" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-12 col-lg-4 text-center">
                     <p>Dignity</p>
                     <img class="w-25" src="{{ asset('assets/img/our-value-3.png') }}" alt="logo our value 3">
                 </div>
-                <div class="col-12" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-12">
                     <div class="row">
                         <div class="col-1">
                         </div>
@@ -164,10 +164,10 @@
     <div class="client">
         <div class="container">
             <div class="row g-5">
-                <div class="col-12" data-aos="fade-down" data-aos-duration="2000">
+                <div class="col-12">
                     <p class="text-title-clientpart">Clients & Partners</p>
                 </div>
-                <div class="col-12" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-12">
                     <div class="row g-4">
                         <div class="col-12">
                             <div class="d-flex justify-content-center">

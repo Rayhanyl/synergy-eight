@@ -3,7 +3,7 @@
     <div class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-7" data-aos="fade-right" data-aos-duration="2000">
+                <div class="col-12 col-md-6 col-lg-7">
                     <p class="text-title-hero">Enhance Your Business with <br> Sinergi Delapan</p>
                     <p class="text-desc-hero">Sinergi Delapan Mandiri is a leading provider of
                         professional IT services,
@@ -18,7 +18,7 @@
                                 class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5 d-none d-md-block" data-aos="fade-left" data-aos-duration="2000">
+                <div class="col-12 col-md-6 col-lg-5 d-none d-md-block">
                     <div class="text-end">
                         <img class="img-hero" src="{{ asset('assets/img/hero.png') }}" alt="hero">
                     </div>
@@ -31,11 +31,11 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-12 text-center">
-                    <p class="text-title-head-service" data-aos="fade-down" data-aos-duration="2000">Our Top Services for
+                    <p class="text-title-head-service">Our Top Services for
                         You</p>
                 </div>
-                <div class="col-12" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="row g-3">
+                <div class="col-12">
+                    <div class="row g-5">
                         <div class="col-12 col-md-6 col-lg-4 hover-service p-4 text-center">
                             <a style="text-decoration: none;color:#E89F00;" href="{{ route('professional-service') }}">
                                 <img class="img-service-training" src="{{ asset('assets/img/icon-training.png') }}"
@@ -95,7 +95,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-md-6 col-lg-7 d-flex align-items-end order-last order-md-first">
-                        <div class="row g-3" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="row g-3">
                             <div class="col-12 postion-custom-hr">
                                 <div class="custom-hr"></div>
                             </div>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-md-6 col-lg-5 order-first order-md-last">
-                        <div class="position-nextlevel-img" data-aos="fade-left" data-aos-duration="2000">
+                        <div class="position-nextlevel-img">
                             <img class="img-nextlevel" src="{{ asset('assets/img/logo-next-level.png') }}"
                                 alt="next level">
                         </div>
@@ -129,27 +129,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-5">
-                    <div class="position-trusted-img" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="position-trusted-img">
                         <img class="img-trusted" src="{{ asset('assets/img/logo-trusted.png') }}" alt="trusted">
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-7 d-flex align-items-end">
                     <div class="row g-3">
-                        <div class="col-12 postion-custom-hr" data-aos="fade-down" data-aos-duration="2000">
+                        <div class="col-12 postion-custom-hr">
                             <div class="custom-hr"></div>
                         </div>
-                        <div class="col-12" data-aos="fade-down" data-aos-duration="2000">
+                        <div class="col-12">
                             <p class="text-title-nextlevel"><span style="font-weight: 600;">Trusted Partner</span> for All
                                 Your IT Needs</p>
                         </div>
-                        <div class="col-12" data-aos="fade-down" data-aos-duration="2000">
+                        <div class="col-12">
                             <p class="text-desc-nextlevel">With a diverse portfolio of satisfied customers, we specialize
                                 in
                                 providing innovative
                                 solutions to help businesses thrive in today's digital world. Our team of experts is
                                 dedicated to delivering top-notch services and support to ensure your success.</p>
                         </div>
-                        <div class="col-12" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="col-12">
                             <div class="row g-3">
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="card rounded-5">
@@ -185,7 +185,7 @@
     <div class="testimonial">
         <div class="bg-blur-left">
             <div class="container">
-                <div class="row g-5" data-aos="fade-up" data-aos-duration="2000">
+                <div class="row g-5">
                     <div class="col-12 text-center">
                         <p class="text-title-testimonial">TESTIMONIALS</p>
                         <p class="text-subtitle-testimonial">Trust Our Clients</p>
