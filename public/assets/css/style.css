@@ -269,6 +269,11 @@ body {
         font-size: 24px;
     }
 
+    .text-desc-testimonial {
+        font-size: 16px;
+        text-align: center;
+    }
+
     .client-landingpage {
         padding: 40px 0px;
     }

@@ -203,7 +203,7 @@
                                             <div style="width:60%; height:auto;">
                                                 <p class="text-name-testimonial"><b style="color:#CA2026;">Arif Bijak
                                                         Bestari</b> / PT. PLN (Persero)</p>
-                                                <p>As a mobile application project user, I want to be able to seamlessly
+                                                <p class="text-desc-testimonial">As a mobile application project user, I want to be able to seamlessly
                                                     sync my
                                                     app data across different devices, allowing me to view it from
                                                     anywhere.
@@ -371,7 +371,6 @@
 
             const swiper2 = new Swiper('.swiper-client', {
                 direction: 'horizontal',
-                spaceBetween: 30,
                 centeredSlides: true,
                 autoplay: {
                     delay: 0,
@@ -381,17 +380,14 @@
                 loop: true,
                 allowTouchMove: false,
                 breakpoints: {
-                    // when window width is >= 320px
                     320: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         spaceBetween: 10
                     },
-                    // when window width is >= 480px
                     480: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         spaceBetween: 10
                     },
-                    // when window width is >= 640px
                     640: {
                         slidesPerView: 7,
                         spaceBetween: 30
